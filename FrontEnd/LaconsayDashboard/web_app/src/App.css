@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.NAVBAR{
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  color: white;
+  background-color: darkblue;
+}
+
+#H1Dashboard{
+  margin-left: 3%;
+}
+
+#H3Recent{
+  margin-left: 3%;
+}
+
+.Dashboard {
+  position: relative;
+  text-align: left;
+  top: 2%;
+}
+
+.RecentClasses{
+  position: relative;;
+  width: 100%;
+  height: 300px;
+  padding: 3%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-align: left;
+  /*background-color: green;*/
+}
+
+.RecentActivities{
+  position: relative;;
+  width: 100%;
+  height: 300px;
+  padding: 3%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-align: left;
+  /*background-color: green;*/
+}
+
+#RecentActivitiesBoxes1{
+  float:left;
+  width:93%;
+  height:125px;
+  background-color:white;
+  border:solid black;
+  border-radius: 20px;
+}
+
+#RecentClassesBoxes1{
+  float:left;
+  width:30%;
+  height:250px;
+  background-color:white;
+  border:solid black;
+  border-radius: 20px;
+}
+
+#RecentClassesBoxes2{
+  float:left;
+  width:30%;
+  height:250px;
+  background-color:white; 
+  border:solid black;
+  margin-left:20px;
+  border-radius: 20px;
+}
+
+#RecentClassesBoxes3 {
+  float:left;
+  width:30%;
+  height:250px;
+  background-color:white;
+  border:solid black;
+  margin-left:20px;
+  border-radius: 20px;
+}
+
+.BoxTitle{  
+  margin-left: 2%;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+hr.BoxLine{
+  width: 95%;
+}
+
+.BoxSubTitle{  
+  margin-left: 2%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.WholeBar{
+  margin-left: 2%;
+  height: 10px;
+  width: 95%;
+  background-color: darkgray;
+}
+
+.WholeBarProg{
+  height: 10px;
+  width: 5%;
+  background-color: green;
+}
+
+.WholeBarProg2{
+  height: 10px;
+  width: 50%;
+  background-color: green;
+}
+
+.WholeBarProg3{
+  height: 10px;
+  width: 75%;
+  background-color: green;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

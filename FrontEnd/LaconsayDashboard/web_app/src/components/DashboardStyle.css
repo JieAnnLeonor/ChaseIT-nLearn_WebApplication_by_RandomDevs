@@ -1,0 +1,7 @@
+.Dashboard-header{
+    text-align: left;
+    margin-top: 2%;
+    padding-left: 5%;
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+}

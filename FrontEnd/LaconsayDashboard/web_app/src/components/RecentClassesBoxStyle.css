@@ -1,0 +1,13 @@
+.item{
+    width: 400px;
+    height: 230px;
+    margin: auto;
+    background-color: pink;
+    padding: 1em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border: 5px solid violet;
+    border-radius: 10px;
+    text-decoration: none;
+}
