@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import logo_img from '../img/logo_img.png';
+import logox_img from '../img/logox_img.png';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -61,7 +61,7 @@ class CreateResources extends Component {
                                                 <Grid item xs={6}>
                                                 <Stack direction="row" spacing={2} justifyContent="flex-start" alignItems="center" sx={{marginLeft: 2, marginTop: 2}}>
                                                     <ArrowBackIcon fontSize='medium'/>
-                                                    <img src={logo_img} alt="logo" className='img_logo' height={50} />
+                                                    <img src={logox_img} alt="logo" className='img_logo' height={50} />
                                                 </Stack>
                                                 </Grid>
                                                 <Grid item xs={6} alignSelf="center">
