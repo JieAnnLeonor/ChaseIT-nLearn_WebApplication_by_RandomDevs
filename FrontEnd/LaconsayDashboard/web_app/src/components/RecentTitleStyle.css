@@ -8,11 +8,20 @@
 
 .container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 1em;
     width: 90%;
     height: 300px;
     margin-left: 5%;
-    border: 5px solid black;
+}
+
+.container-activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: auto;
 }

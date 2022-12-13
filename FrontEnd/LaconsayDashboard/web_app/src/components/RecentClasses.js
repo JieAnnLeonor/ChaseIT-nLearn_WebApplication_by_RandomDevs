@@ -10,9 +10,9 @@ class RecentClasses extends Component {
                 Recent Classes
             </div>
             <div className='container'>
-                <RecentClassesBox title = "Applications Development"/>                
-                <RecentClassesBox title = "Automata"/>
-                <RecentClassesBox title = "Techno"/>          
+                <RecentClassesBox title = "Applications Development" lessons = "4" activities = "3"/>                
+                <RecentClassesBox title = "Automata" lessons = "4" activities = "3"/>
+                <RecentClassesBox title = "Techno" lessons = "4" activities = "3"/>          
             </div>
             </>
         )

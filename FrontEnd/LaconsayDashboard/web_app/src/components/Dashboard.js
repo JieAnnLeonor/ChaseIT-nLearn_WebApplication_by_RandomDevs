@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DashboardStyle from './DashboardStyle.css'
+import RecentActivities from './RecentActivities';
 import RecentClasses from './RecentClasses';
 
 class Dashboard extends Component {
@@ -10,6 +11,7 @@ class Dashboard extends Component {
                 
             </div>
             <RecentClasses />
+            <RecentActivities />
             </>         
         )
     }
