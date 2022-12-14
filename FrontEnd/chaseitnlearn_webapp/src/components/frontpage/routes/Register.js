@@ -21,7 +21,7 @@ const Register = (props) => {
     <div className="auto-form-container">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Full Name</label>
-        <input value={name} name="name" id="name" placeholder="full name"></input>
+        <input value={name} onChange={(e) => setName(e.target.value)} type="name" name="name" id="name" placeholder="full name"></input>
         <label htmlFor="email">Email</label>
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email"/>
         <label htmlFor="password">Password</label>
