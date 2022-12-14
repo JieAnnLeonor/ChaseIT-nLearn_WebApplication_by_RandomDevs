@@ -1,0 +1,87 @@
+.auto-form-container{
+    color: #2a2a2a;
+    margin: 4rem 6rem;
+} 
+
+.auto-form-container form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.auto-form-container label{
+    text-align: left;
+    padding: 0,25rem 0;
+}
+
+.auto-form-container input {
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+
+}
+
+.auto-form-container button {
+    display: inline;
+    background: #65a3cc;
+    margin-bottom: 1rem;
+}
+
+.link-btn button {
+    text-decoration: underline;
+    color: rgb(8, 19, 29);
+    margin-bottom: 5rem;   
+    background: none;
+    border: aliceblue;
+}
+
+.auto-form-container1{
+    color: #2a2a2a;
+    margin: 4rem 6rem;
+} 
+
+.auto-form-container1 form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.auto-form-container1 label{
+    text-align: left;
+    padding: 0,25rem 0;
+}
+
+.auto-form-container1 input {
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+
+}
+
+.btn1 button{
+    flex-wrap: wrap;
+    background: #65a3cc;
+    margin-left: 0.8rem;
+    border-radius: 3px;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.link-btn1 button{
+    text-decoration: underline;
+    color: rgb(8, 19, 29);
+    margin-bottom: 5rem;   
+    background: none;
+    border: aliceblue;
+}
+
