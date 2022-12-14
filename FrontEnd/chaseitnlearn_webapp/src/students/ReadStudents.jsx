@@ -29,7 +29,6 @@ class ReadStudents extends Component {
                                     <th>MIDDLENAME</th>
                                     <th>YEARLEVEL</th>
                                     <th>CONTACT</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>

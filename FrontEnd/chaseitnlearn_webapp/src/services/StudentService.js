@@ -1,12 +1,12 @@
-import axios from "axios";
-
-const STUDENT_BASE_URL = "http://localhost:8080/student/getAllStudents"
+import http from "../http"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class StudentService{
 
     getStudents(){
-        return axios.get(STUDENT_BASE_URL);
+        return http.get("/student/getAllStudents");
     }
+    
 }
 
 export default new StudentService()
