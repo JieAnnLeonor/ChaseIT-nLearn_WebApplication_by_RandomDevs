@@ -32,7 +32,7 @@ public class CourseEntity {
 		joinColumns = @JoinColumn(name = "course_id"),
 		inverseJoinColumns = @JoinColumn(name = "teacher_id")
 		)
-	Set<TeacherEntity> t_course;
+	Set<TeacherEntity> tcourse;
 	
 
 	public CourseEntity() {}	
@@ -41,14 +41,14 @@ public class CourseEntity {
 		return coursecode;
 	}
 
-	public CourseEntity(int id, String coursecode, String coursename, String coursedescription, int unit, Set<TeacherEntity> t_course) {
+	public CourseEntity(int id, String coursecode, String coursename, String coursedescription, int unit, Set<TeacherEntity> tcourse) {
 		super();
 		this.id = id;
 		this.coursecode = coursecode;
 		this.coursename = coursename;
 		this.coursedescription = coursedescription;
 		this.unit = unit;
-		this.t_course = t_course;
+		this.tcourse = tcourse;
 	}
 
 
@@ -85,13 +85,13 @@ public class CourseEntity {
 		this.unit = unit;
 	}
 
-	public Set<TeacherEntity> getT_course() {
-		return t_course;
+	public Set<TeacherEntity> getTcourse() {
+		return tcourse;
 	}
 
-
-	public void setT_course(Set<TeacherEntity> t_course) {
-		this.t_course = t_course;
+	public void setTcourse(Set<TeacherEntity> tcourse) {
+		this.tcourse = tcourse;
 	}
+
 	
 }

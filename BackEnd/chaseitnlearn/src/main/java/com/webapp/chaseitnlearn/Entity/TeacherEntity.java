@@ -24,7 +24,7 @@ public class TeacherEntity {
 	private String contact;
 	
 	@JsonIgnore
-	@ManyToMany(mappedBy = "t_course")
+	@ManyToMany(mappedBy = "tcourse")
 	Set<CourseEntity> courses;
 	
 	public TeacherEntity() {}
