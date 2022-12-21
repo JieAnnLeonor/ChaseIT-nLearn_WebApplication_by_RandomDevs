@@ -17,7 +17,7 @@ class CreateCourse extends Component {
             coursename: '',
             coursedescription: '',
             unit: '',
-            t_course: [{id: this.props.value}]
+            tcourse: [{id: this.props.value}]
         };
     
         this.handleCodeChange = this.handleCodeChange.bind(this);
@@ -53,7 +53,7 @@ class CreateCourse extends Component {
             coursedescription: this.state.coursedescription,
             coursename: this.state.coursename,
             unit: this.state.unit,
-            t_course: [{id: 1}]
+            tcourse: [{id: 1}]
         }
     
         axios.post(MY_URL,stateVal,{
