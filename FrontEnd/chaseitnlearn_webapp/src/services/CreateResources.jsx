@@ -1,161 +1,140 @@
 import React, { Component } from 'react';
-import '../App.css';
-import Grid from '@mui/material/Grid';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import logox_img from '../img/logox_img.png';
-import Paper from '@mui/material/Paper';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import IconButton from '@mui/material/IconButton';
-import UploadFileSharpIcon from '@mui/icons-material/UploadFileSharp';
+import Card from '@mui/material/Card';
 import axios from 'axios';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { Box } from '@mui/system';
 
-
-const x = (e) =>{
-    const MY_URL = "http://localhost:8080/resources/postResources";
-    e.preventDefault();
-    var dataTitle = e.target.r_title.value;
-    var dataDescription = e.target.r_description.value;
-    var formData = new FormData();
-    formData.append("file",e.target.r_file.files[0]);
-
-    axios.post(MY_URL,formData,{
-        params:{
-            r_title: dataTitle,
-            r_description: dataDescription
-        },
-        headers:{
-            "Content-Type": "multipart/form-data",
-        }
-    }).then((response) => {
-        console.log(response);
-    }).catch(err => console.log(err));
-}
 
 class CreateResources extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            r_title: ' ',
+            r_description: ' ',
+            filex: ' ',
+        };
+
+        this.handleTitleChange = this.handleTitleChange.bind(this);
+        this.handleDescChange = this.handleDescChange.bind(this);
+        this.handleFile = this.handleFile.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    //update title
+    handleTitleChange(e){
+        this.setState({r_title: e.target.value});
+    }
+    //update description
+    handleDescChange(e){
+        this.setState({r_description: e.target.value});
+    }
+    //update file
+    handleFile(e){
+        var formData = new FormData();
+        formData.append("file",e.target.files[0]);
+        this.setState({filex: formData});
+    }
+    //when submit file
+    handleSubmit(e){
+        const MY_URL = "http://localhost:8080/resources/postResources";
+        e.preventDefault();
+
+        axios.post(MY_URL,this.state.filex,{
+            params:{
+                r_title: this.state.r_title,
+                r_description: this.state.r_description
+            },
+            headers:{
+                "Content-Type": "multipart/form-data",
+            }
+        }).then((response) => {
+            this.setState({r_title: ' ', r_description: ' ', filex: ''});
+            e.target.filex.value = null;
+            console.log(response);
+        }).catch(err => console.log(err));
+    }
+
     render() {
         return (
-            <div>
-                <CssBaseline>
-                    <Grid container rowSpacing={1} 
-                        direction="column"
-                        justifyContent="space-evenly"
-                        alignItems="center">
-                            <Grid item xs={12}>
-                                <Box sx={{flexGrow: 1, height: "3rem", color:"green"}}>
-                                <AppBar sx={{backgroundColor: "rgba(0, 38, 65, 1)", height: "4.5rem", borderBottom:"5px solid black"}}>
-                                        <Toolbar variant='dense' disableGutters>
-                                            <Grid container 
-                                                direction="row"
-                                                justifyContent="space-evenly"
-                                                alignItems="flex-start"
-                                                item xs={12}
-                                            >
-                                                <Grid item xs={6}>
-                                                <Stack direction="row" spacing={2} justifyContent="flex-start" alignItems="center" sx={{marginLeft: 2, marginTop: 2}}>
-                                                    <ArrowBackIcon fontSize='medium'/>
-                                                    <img src={logox_img} alt="logo" className='img_logo' height={50} />
-                                                </Stack>
-                                                </Grid>
-                                                <Grid item xs={6} alignSelf="center">
-                                                    <Stack direction="row" spacing={2} justifyContent="space-evenly" alignItems="center">
-                                                        <Button>
-                                                            <Typography sx={{fontSize: "1rem", color: "white"}}>
-                                                                Home
-                                                            </Typography>
-                                                        </Button>
-                                                        <Button>
-                                                            <Typography sx={{fontSize: "1rem", color: "white"}}>
-                                                                Manage Resources
-                                                            </Typography>
-                                                        </Button>
-                                                        <Avatar sx={{ bgcolor: "green", height: 25, width: 25}}>
-                                                            <Typography sx={{fontSize: "1rem"}}>N</Typography> 
-                                                        </Avatar>
-                                                    </Stack>
-                                                </Grid>
-                                            </Grid>
-                                        </Toolbar>
-                                    </AppBar>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Box sx={{flexGrow: 1, height: "8rem", paddingTop: "2rem"}}>
-                                    <Typography sx={{fontSize: "2rem"}}>
-                                        Resources Upload
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Box sx={{
-                                    display: 'flex',
-                                    flexWrap: 'wrap',
-                                    '& > :not(style)': {
-                                    m: -2,
-                                    width: 450,
-                                    height: 230,
-                                    },
-                                }}>
-                                    <Paper elevation={5} sx={{borderLeft: "5px solid black", backgroundColor: "rgba(1, 87, 146, 1)"}}>
-                                       <form onSubmit={x}>
-                                            <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }} 
-                                                    direction="column"
-                                                    justifyContent="space-evenly"
-                                                    alignItems="flex-start"
-                                                    spacing={5}>
-                                                <Grid item xs={12}>
-                                                    <Stack direction="row" spacing={5.5} justifyContent="flex-start" alignItems="center" sx={{paddingTop:1, paddingLeft:1}}>
-                                                        <Typography sx={{fontSize: "0.8rem", display: "inline=block", color: "white"}}>
-                                                            Resources Title:
-                                                        </Typography>
-                                                        <TextField id="r_title" variant="standard" sx={{width: 232, backgroundColor:"white"}} InputProps={{ sx: { height: 20, fontSize: 5} }}/>
-                                                    </Stack>
-                                                    </Grid>
-                                                    <Grid item xs={12}>
-                                                        <Stack direction="row" spacing={3} justifyContent="flex-start" alignItems="center" sx={{paddingTop:1, paddingLeft:1}}>
-                                                            <Typography sx={{fontSize: "0.8rem", color: "white"}}>
-                                                                Resources Description: 
-                                                            </Typography>
-                                                            <TextField
-                                                                id="r_description"
-                                                                multiline
-                                                                rows={2}
-                                                                sx={{backgroundColor:"white", width:200}}
-                                                                InputProps={{ sx: { height: 50, fontSize: 5, margin: 0} }}
-                                                                />
-                                                        </Stack>
-                                                    </Grid>
-                                                <Grid item xs={12}>
-                                                    <IconButton color="white" component="label">
-                                                        <input hidden accept ="image/*, video/*, .pdf, .doc, .xml, .txt" formEncType='multipart/form-data' type="file" id="r_file"/>
-                                                        <UploadFileSharpIcon />
-                                                    </IconButton>
-                                                    <Button variant="outlined" type="submit" sx={{width: 50, height: 20, backgroundColor: "white", marginLeft: 1}}>
-                                                        DONE
-                                                    </Button>
-                                                </Grid>
-                                            </Grid>
-                                        </form>
-                                    </Paper>
-                                </Box>
-                            </Grid>
-                    </Grid>
-                    <footer className='footer'>
-                        <Box>
-                            <Typography sx={{fontSize: "0.7rem", backgroundColor: "rgba(0, 38, 65, 1)"}}>
-                                ©ChaseIT’nLearn Inc. All Right Reserved
-                            </Typography>
-                        </Box>
-                    </footer>
-                </CssBaseline>
-            </div>
+            <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+                <Box sx={{padding: 1, fontSize: "3rem", fontFamily: 'Trocchi', fontWeight: "bold"
+                    ,letterSpacing: "-1px", lineHeight: "2", textAlign: "center", color: "rgb(130, 170, 227)"}}>
+                        ADD RESOURCES
+                </Box>
+                <Card variant='outlined' 
+                    sx={{width: 600, height: 300, display: "flex", 
+                        flexDirection: "column", alignItems: "center",  
+                        justifyContent: "center", padding: 1, backgroundColor: "#BFEAF5", 
+                        borderRight: "2px solid black", borderLeft: "10px solid black", borderBottomRightRadius: "20px", 
+                        borderTopRightRadius: "20px", borderTop: "2px solid black", borderBottom: "2px solid black"}}>
+                    <Box sx={{padding: 5, display: "flex", justifyContent: "flex-start", 
+                        flexDirection: "column",alignItems: "flex-start"}}
+                    >
+                        <form onSubmit={this.handleSubmit}>     
+                            <Stack
+                                direction="row"
+                                justifyContent="flex-end"
+                                alignItems="center"
+                                spacing={3}
+                            >
+                                    <Typography sx={{fontSize: "1.5rem", display: "inline-block", color: "grey", fontWeight: "700"}}>TITLE:</Typography>
+                                    <TextField value={this.state.r_title} onChange={this.handleTitleChange} id="r_title" variant="standard" 
+                                            InputProps={{ sx: { width: 320 ,height: 30, fontSize: "1rem", 
+                                            backgroundColor: "white", padding: 2, color: 'black'} }}
+                                    />   
+                            </Stack>
+                            <Stack
+                                direction="row"
+                                justifyContent="flex-end"
+                                alignItems="center"
+                                spacing={3}
+                                sx={{padding:1}}
+                            >
+                                <Typography sx={{fontSize: "1.5rem", display: "inline-block", color: "grey", fontWeight: "700"}}>DESCRIPTION:</Typography>
+                                <TextField
+                                    onChange={this.handleDescChange}
+                                    value={this.state.r_description}
+                                    id="r_description"
+                                    multiline
+                                    rows={3}
+                                    InputProps={{ sx: { height: 80, fontSize: "1rem", 
+                                    margin: 0, backgroundColor:"white", width:310, fontColor: "black"} }}
+                                />
+                            </Stack>
+                            <Stack
+                                direction="row"
+                                justifyContent="flex-end"
+                                alignItems="center"
+                                spacing={5}
+                                sx={{padding:1}}
+                            >
+                                <Typography sx={{fontSize: "1.5rem", display: "inline-block", color: "grey", fontWeight: "700"}}>FILE:</Typography>
+                                <IconButton color="primary" aria-label="upload picture" component="label">
+                                    <DriveFolderUploadIcon/>
+                                    <input type="file" id='filex' onChange={this.handleFile}/>
+                                </IconButton>
+                                {/*<input type="file" id='filex' onChange={this.handleFile}/>*/}
+                            </Stack>
+                            <Box>
+                                <Button 
+                                    type='submit' 
+                                    variant="contained"
+                                    endIcon={<ArrowUpwardIcon />}
+                                >
+                                    SUBMIT
+                                </Button>
+                            </Box>   
+                        </form>
+                    </Box>
+                </Card>
+            </Box>
+                
         );
     }
 }

@@ -1,15 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CreateCourse from './services/CreateCourse';
+import CreateResources from './services/CreateResources';
+import FooterC from './services/FooterC';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          "ChaseIT'nLearn Web Application"
-        </h1>
-      </header>
-    </div>
+    <>
+      <div>
+        <CreateCourse />
+      </div>
+      <div>
+        <FooterC />
+      </div>
+    </>
+      
   );
 }
 
