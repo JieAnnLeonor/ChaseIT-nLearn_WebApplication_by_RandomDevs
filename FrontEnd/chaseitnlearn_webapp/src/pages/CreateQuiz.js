@@ -2,6 +2,7 @@ import React from 'react'
 import {useNavigate} from "react-router-dom"
 import { Link } from "react-router-dom";
 import TeacherNavbar from '../components/dashboard/dashpages/TeacherNavbar';
+import BottomBar from '../components/download/downloadcomponents/BottomBar';
 import '../pagedesigns/CreateQuiz.css';
 
 /*
@@ -75,6 +76,7 @@ function CreateQuiz(){
           <button type="submit">Create Quiz</button>
           </form>
         </div>
+        <BottomBar />
       </>
     );
 }
