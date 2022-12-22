@@ -1,10 +1,19 @@
 import React from 'react'
+import StudentNavbar from '../components/dashboard/dashpages/StudentNavbar'
+import BottomBar from '../components/download/downloadcomponents/BottomBar'
+import Quiz from '../components/quizcomponents/Quiz'
+import { Box } from '@mui/system'
 
-const TakeQuiz = () => {
+function TakeQuiz() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <StudentNavbar />
+      <Box postion ="fixed"
+      sx={{paddingLeft: 65, paddingTop: 10, height: 650, width: 1000 }}>
+        <Quiz/>
+      </Box>
+      <BottomBar />
+    </>
   )
 }
 
