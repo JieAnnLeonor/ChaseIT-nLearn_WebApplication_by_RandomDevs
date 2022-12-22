@@ -8,7 +8,6 @@ import Button from '@mui/material/Button';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import FooterC from './FooterC';
 import { Box } from '@mui/system';
-import BasicModal from './Modal';
 
 class CreateCourse extends Component {
     constructor(props){
@@ -70,7 +69,6 @@ class CreateCourse extends Component {
     render() {
         return (
             <>
-            <Button onClick={<BasicModal/>}>CLICK ME!</Button>
             <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
                 <Box sx={{padding: 1, fontSize: "3rem", fontFamily: 'Trocchi', fontWeight: "bold"
                     ,letterSpacing: "-1px", lineHeight: "2", textAlign: "center", color: "rgb(130, 170, 227)"}}>
