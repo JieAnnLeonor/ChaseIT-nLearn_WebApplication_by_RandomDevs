@@ -1,0 +1,82 @@
+.quiz-container{
+    color: #2a2a2a;
+    margin: 2rem 3rem;
+}
+
+.quiz-title{
+    margin: left;
+    width: 300px;
+}
+
+.title{
+    margin-left: 0rem;
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.quiz-title input{
+    width: auto;
+    font-size: x-large;
+}
+
+.question{
+    font-size: x-large;
+}
+
+.answer{
+    float: left;
+    margin-right: 10%;
+}
+
+.quiz-container form{
+    
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    background-color: lightblue;
+    border: 15px solid lightblue;
+}
+
+.quiz-container button{
+    margin: auto;
+    background: #65a3cc;
+    width: 300px;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.Enter{
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.Enter input{
+    height: 30px;
+    font-style: italic;
+    width: 300px;
+}
+
+.Enter button{
+    margin-left: 1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+}
+
+.back{
+    color: #2a2a2a;
+    text-align: left;   
+    margin: 1rem 1rem;
+}
+
+.back button{
+    border: none;
+    background: #fff;    
+    font-size: 20px;
+}
+
