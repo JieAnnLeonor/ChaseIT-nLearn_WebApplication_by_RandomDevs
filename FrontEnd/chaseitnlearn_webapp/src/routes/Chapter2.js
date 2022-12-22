@@ -15,7 +15,7 @@ const Chapter2 = () => {
     </div>     
       <Sidebar/> 
       <div className='chap1'>
-      <h1> Lesson1: Chapter 1</h1>
+      <h1> Lesson1: Chapter 2</h1>
         <h3> "Use Case Diagram"</h3>
           <h5> 
             What is a use case diagram?  
