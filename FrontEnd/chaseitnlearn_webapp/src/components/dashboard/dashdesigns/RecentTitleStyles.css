@@ -1,0 +1,27 @@
+.RecentTitleStyle-header{
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+}
+
+.container-activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: auto;
+}
