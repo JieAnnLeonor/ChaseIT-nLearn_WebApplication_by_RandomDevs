@@ -7,6 +7,7 @@ import Pricing from "./components/frontpage/routes/Pricing";
 import Contact from "./components/frontpage/routes/Contact";
 import SignUp from "./components/frontpage/routes/SignUp";
 import Register from "./components/frontpage/routes/Register"
+import TeacherDashboard from "./components/dashboard/dashpages/TeacherDashboard";
 import StudentDashboard from "./components/dashboard/dashpages/StudentDashboard";
 import MyCourses from "./pages/MyCourses";
 import EnrollCourse from "./pages/EnrollCourse";
@@ -16,6 +17,7 @@ import Introduction from "./routes/Introduction";
 import Chapter2 from "./routes/Chapter2";
 import Quiz1 from "./routes/Quiz1";
 import Resources from "./pages/Resources";
+import TakeQuiz from "./pages/TakeQuiz";
 import CreateQuiz from "./pages/CreateQuiz";
 
 export default function App() {
@@ -28,7 +30,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />        
         <Route path="/signup" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/studentdashboard" element={<StudentDashboard/>}/>      
+        <Route path="/studentdashboard" element={<StudentDashboard/>}/>   
+        <Route path="/teacherdashboard" element={<TeacherDashboard/>}/>       
         <Route path="/readallcourses" element={<MyCourses />} />
         <Route path="/enrollcourse" element={<EnrollCourse />} />
         <Route path="/takelessons" element={<TakeLessons />} />       
@@ -37,6 +40,7 @@ export default function App() {
         <Route path="/lesson1/chapter2" element={<Chapter2/>}/>       
         <Route path="/lesson1/quiz1" element={<Quiz1/>}/>           
         <Route path="/resources" element={<Resources/>}/>
+        <Route path="/takequiz" element={<TakeQuiz/>}/>
         <Route path="/createquiz" element={<CreateQuiz />}/>
       </Routes>
     </div>

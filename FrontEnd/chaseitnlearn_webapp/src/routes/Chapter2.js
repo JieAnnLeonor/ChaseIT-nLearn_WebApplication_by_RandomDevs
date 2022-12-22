@@ -7,6 +7,7 @@ import "./Chapter1.css"
 const Chapter2 = () => {
   return (
     <> 
+    <div className='body'>
     <StudentNavbar/>   
       <div className = "back">
         <Link to="/takelessons">
@@ -15,7 +16,7 @@ const Chapter2 = () => {
     </div>     
       <Sidebar/> 
       <div className='chap1'>
-      <h1> Lesson1: Chapter 1</h1>
+      <h1> Lesson1: Chapter 2</h1>
         <h3> "Use Case Diagram"</h3>
           <h5> 
             What is a use case diagram?  
@@ -38,6 +39,7 @@ const Chapter2 = () => {
           Stick figures represent actors in the process, and the actor's participation in the system is modeled with a line between 
           the actor and use case. To depict the system boundary, draw a box around the use case itself.
           </h6>
+      </div>
       </div>
     </>
   )
