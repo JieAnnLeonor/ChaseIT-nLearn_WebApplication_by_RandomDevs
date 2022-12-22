@@ -19,7 +19,6 @@ class CreateCourse extends Component {
             coursedescription: '',
             unit: '',
             tcourse: [{id: this.props.value}],
-            modal: <BasicModal/>
         };
     
         this.handleCodeChange = this.handleCodeChange.bind(this);
