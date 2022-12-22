@@ -21,6 +21,7 @@ import TakeQuiz from "./pages/TakeQuiz";
 import CreateCourse from "./pages/TeacherPage/CreateCourse";
 import CreateResources from "./pages/TeacherPage/CreateResources";
 import ReadResources from "./pages/TeacherPage/ReadResources";
+import CreateQuiz from "./pages/CreateQuiz";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/course/add" element={<CreateCourse/>}/>
         <Route path="/resources/add" element={<CreateResources/>}/>
         <Route path="/resources/list" element={<ReadResources/>}/>
+        <Route path="/createquiz" element={<CreateQuiz />}/>
       </Routes>
     </div>
   );
