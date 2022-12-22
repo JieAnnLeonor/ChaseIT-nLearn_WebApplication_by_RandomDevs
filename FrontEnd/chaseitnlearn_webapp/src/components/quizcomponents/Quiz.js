@@ -6,48 +6,48 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Quiz() {
     const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'What is lorem ipsum?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Answer 1', isCorrect: false },
+				{ answerText: 'Answer 2', isCorrect: false },
+				{ answerText: 'Answer 3', isCorrect: true },
+				{ answerText: 'Answer 4', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'What is lorem ipsum?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'Answer 1', isCorrect: false },
+				{ answerText: 'Answer 2', isCorrect: true },
+				{ answerText: 'Answer 3', isCorrect: false },
+				{ answerText: 'Answer 4', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'What is lorem ipsum?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Answer 1', isCorrect: true },
+				{ answerText: 'Answer 2', isCorrect: false },
+				{ answerText: 'Answer 3', isCorrect: false },
+				{ answerText: 'Answer 4', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'What is lorem ipsum?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Answer 1', isCorrect: false },
+				{ answerText: 'Answer 2', isCorrect: false },
+				{ answerText: 'Answer 3', isCorrect: false },
+				{ answerText: 'Answer 4', isCorrect: true },
 			],
 		},
         {
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'What is lorem ipsum?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Answer 1', isCorrect: false },
+				{ answerText: 'Answer 2', isCorrect: false },
+				{ answerText: 'Answer 3', isCorrect: true},
+				{ answerText: 'Answer 4', isCorrect: false },
 			],
 		}
 	];
