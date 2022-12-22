@@ -7,6 +7,7 @@ import Pricing from "./components/frontpage/routes/Pricing";
 import Contact from "./components/frontpage/routes/Contact";
 import SignUp from "./components/frontpage/routes/SignUp";
 import Register from "./components/frontpage/routes/Register"
+import TeacherDashboard from "./components/dashboard/dashpages/TeacherDashboard";
 import StudentDashboard from "./components/dashboard/dashpages/StudentDashboard";
 import MyCourses from "./pages/MyCourses";
 import EnrollCourse from "./pages/EnrollCourse";
@@ -28,7 +29,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />        
         <Route path="/signup" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/studentdashboard" element={<StudentDashboard/>}/>      
+        <Route path="/studentdashboard" element={<StudentDashboard/>}/>   
+        <Route path="/teacherdashboard" element={<TeacherDashboard/>}/>       
         <Route path="/readallcourses" element={<MyCourses />} />
         <Route path="/enrollcourse" element={<EnrollCourse />} />
         <Route path="/takelessons" element={<TakeLessons />} />       
