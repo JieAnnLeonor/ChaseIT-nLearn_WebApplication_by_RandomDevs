@@ -9,6 +9,7 @@ import SignUp from "./components/frontpage/routes/SignUp";
 import Register from "./components/frontpage/routes/Register"
 import StudentDashboard from "./components/dashboard/dashpages/StudentDashboard";
 import MyCourses from "./pages/MyCourses";
+import CreateQuiz from "./pages/CreateQuiz";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/studentdashboard" element={<StudentDashboard/>}/>      
         <Route path="/readallcourses" element={<MyCourses />} />
+        <Route path="/createquiz" element={<CreateQuiz />}/>
       </Routes>
     </div>
   );
