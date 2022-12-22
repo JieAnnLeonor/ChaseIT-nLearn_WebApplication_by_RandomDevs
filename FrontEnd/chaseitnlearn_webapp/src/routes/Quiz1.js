@@ -14,9 +14,10 @@ const Quiz1 = () => {
         </Link>  
     </div>     
       <Sidebar/> 
-      <div className='chap1'>
+      <div className='intro'>
         <h1>Lesson 1: Quiz </h1>
-        <h2>Use Case Diagram Quiz</h2> 
+        <h6>Attepmts allowed: 1</h6>
+        <h6>Are you sure you want to start the quiz?</h6>
         <Link to="/takequiz">
           <button>Start</button>
         </Link> 

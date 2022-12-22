@@ -16,6 +16,7 @@ import Introduction from "./routes/Introduction";
 import Chapter2 from "./routes/Chapter2";
 import Quiz1 from "./routes/Quiz1";
 import Resources from "./pages/Resources";
+import TakeQuiz from "./pages/TakeQuiz";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/lesson1/chapter2" element={<Chapter2/>}/>       
         <Route path="/lesson1/quiz1" element={<Quiz1/>}/>           
         <Route path="/resources" element={<Resources/>}/>
+        <Route path="/takequiz" element={<TakeQuiz/>}/>
       </Routes>
     </div>
   );
