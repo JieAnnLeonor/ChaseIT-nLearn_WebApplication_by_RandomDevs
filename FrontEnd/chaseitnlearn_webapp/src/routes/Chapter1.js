@@ -9,11 +9,19 @@ const Chapter1 = () => {
     <> 
     <div className='body'>
     <StudentNavbar/>   
-      <div className = "back">
+      <div className = "back1">
         <Link to="/takelessons">
           <button><i class="fa-solid fa-arrow-left"></i></button>
         </Link>  
-    </div>     
+    </div>   
+    <div className='next'>
+        <Link to="/lesson1/chapter1">
+          <button><i class="fa-solid fa-less-than"></i>previous page</button>
+        </Link>
+        <Link to="/lesson1/chapter1/page2">
+          <button>next page<i class="fa-solid fa-greater-than"></i></button>
+        </Link> 
+    </div>  
       <Sidebar/> 
       <div className='chap1'>
         <h1> Lesson1: Chapter 1</h1>

@@ -23,6 +23,11 @@
     font-weight: bold;
 }
 
+.body1 {
+    background-color: rgb(188, 203, 230);
+    height: 200vh;
+}
+
 .body {
     background-color: rgb(188, 203, 230);
     height: 100vh;
@@ -78,6 +83,30 @@
     padding-right: 1rem;
     color: aliceblue;
     background: rgb(127, 140, 255);
+}
+
+.back1 button{
+    text-decoration: none;
+    color: rgb(8, 19, 29);  
+    background: none;
+    border: aliceblue;
+    padding-right: 77rem;
+    font-size: 25px;
+}
+
+.next{
+    justify-content: right;
+    justify-items: right;
+    align-items: right;
+    padding-left: 60rem ;
+}
+
+.next button{
+    text-decoration: underline;
+    color: rgb(8, 19, 29);
+    background: none;
+    border: aliceblue;
+    padding-left: 3rem;
 }
 
 

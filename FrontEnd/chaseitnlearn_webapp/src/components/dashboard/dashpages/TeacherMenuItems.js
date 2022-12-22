@@ -19,7 +19,7 @@ export const TeacherMenuItems = [
     },
     {
         title: "Resources",
-        url: "/resource",
+        url: "/readresources",
         cName: "nav-links",
         icon: "fa-solid fa-user-gear"
     },

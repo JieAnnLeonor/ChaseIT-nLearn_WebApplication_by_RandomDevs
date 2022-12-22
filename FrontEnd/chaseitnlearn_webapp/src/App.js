@@ -18,6 +18,7 @@ import Chapter2 from "./routes/Chapter2";
 import Quiz1 from "./routes/Quiz1";
 import Resources from "./pages/Resources";
 import TakeQuiz from "./pages/TakeQuiz";
+import Page1 from "./routes/Page1";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/takelessons" element={<TakeLessons />} />       
         <Route path="/introduction" element={<Introduction/>}/>
         <Route path="/lesson1/chapter1" element={<Chapter1/>}/>
+        <Route path="//lesson1/chapter1/page2" element={<Page1/>}/>
         <Route path="/lesson1/chapter2" element={<Chapter2/>}/>       
         <Route path="/lesson1/quiz1" element={<Quiz1/>}/>           
         <Route path="/resources" element={<Resources/>}/>
