@@ -1,6 +1,6 @@
-import Hero from "../Hero";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import Hero from "../contents/Hero";
+import Navbar from "../contents/Navbar";
+import Footer from "../contents/Footer";
 
 function Pricing() {
   return (

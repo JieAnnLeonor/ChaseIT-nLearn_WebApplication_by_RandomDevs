@@ -1,7 +1,7 @@
-import Hero from "../Hero";
-import Navbar from "../Navbar";
+import Hero from "../contents/Hero";
+import Navbar from "../contents/Navbar";
 import HomeImg from "../assets/homep.png";
-import Footer from "../Footer";
+import Footer from "../contents/Footer";
 
 function Home() {
   return (

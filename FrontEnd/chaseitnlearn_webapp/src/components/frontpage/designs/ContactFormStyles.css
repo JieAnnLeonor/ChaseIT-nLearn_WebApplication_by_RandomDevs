@@ -1,0 +1,44 @@
+.form-conatiner {
+    margin: 4rem 6rem;
+    color: #2a2a2a;
+  }
+  
+  .form-conatiner form {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .form-conatiner input {
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+  }
+  
+  .form-conatiner textarea {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+  }
+  
+  .form-conatiner button {
+    display: inline;
+    background: #65a3cc;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .form-conatiner {
+      margin: 4rem 2rem;
+    }
+  
+    .form-conatiner form {
+      padding-top: 2rem;
+      width: 90%;
+    }
+  }
+  

@@ -1,7 +1,7 @@
-import Hero from "../Hero";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import ContactForm from "../ContactForm";
+import Hero from "../contents/Hero";
+import Navbar from "../contents/Navbar";
+import Footer from "../contents/Footer";
+import ContactForm from "../contents/ContactForm";
 
 function Contact() {
   return (
