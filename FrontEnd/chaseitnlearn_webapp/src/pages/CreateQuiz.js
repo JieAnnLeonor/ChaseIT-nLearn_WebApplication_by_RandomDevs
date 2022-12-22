@@ -1,5 +1,4 @@
 import React from 'react'
-import {useNavigate} from "react-router-dom"
 import { Link } from "react-router-dom";
 import TeacherNavbar from '../components/dashboard/dashpages/TeacherNavbar';
 import BottomBar from '../components/download/downloadcomponents/BottomBar';
@@ -73,7 +72,9 @@ function CreateQuiz(){
 
             </div>
           <button type="button" id="add-question">Add Question</button>
-          <button type="submit">Create Quiz</button>
+          <Link to = "/teacherdashboard">
+            <button type="submit">Create Quiz</button>
+          </Link>
           </form>
         </div>
         <BottomBar />
