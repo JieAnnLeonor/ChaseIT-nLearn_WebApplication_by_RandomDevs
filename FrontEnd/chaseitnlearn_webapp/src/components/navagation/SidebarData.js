@@ -96,5 +96,11 @@ export const SidebarData = [
         title: "Summary ",
         path: "/summary",
         icon: <FaIcons.FaScroll/>,
+    },
+    {
+        title: "Resources",
+        path: "/resources",
+        icon: <FaIcons.FaFileDownload/>,
     }
+
 ]

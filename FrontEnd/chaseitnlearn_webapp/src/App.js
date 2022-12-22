@@ -12,6 +12,10 @@ import MyCourses from "./pages/MyCourses";
 import EnrollCourse from "./pages/EnrollCourse";
 import TakeLessons from "./pages/TakeLessons";
 import Chapter1 from "./routes/Chapter1";
+import Introduction from "./routes/Introduction";
+import Chapter2 from "./routes/Chapter2";
+import Quiz1 from "./routes/Quiz1";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -27,7 +31,11 @@ function App() {
         <Route path="/readallcourses" element={<MyCourses />} />
         <Route path="/enrollcourse" element={<EnrollCourse />} />
         <Route path="/takelessons" element={<TakeLessons />} />       
+        <Route path="/introduction" element={<Introduction/>}/>
         <Route path="/lesson1/chapter1" element={<Chapter1/>}/>
+        <Route path="/lesson1/chapter2" element={<Chapter2/>}/>       
+        <Route path="/lesson1/quiz1" element={<Quiz1/>}/>           
+        <Route path="/resources" element={<Resources/>}/>
       </Routes>
     </div>
   );
