@@ -49,7 +49,6 @@ function MyCourses() {
               <button>Search</button>
             </Link>        
           </form>
-
           <h1>My Courses</h1>
         </div>     
 
@@ -85,14 +84,14 @@ function MyCourses() {
               </div>
             )
           })}   
-        </div>  
-      </section>     
-
+        </div> 
+      </section>
+           
       <div className="enroll">
-        <Link to="/enrollcourse">
-          <button>Enroll</button>
-        </Link>
-      </div>
+            <Link to="/enrollcourse">
+              <button>Enroll</button>
+            </Link>
+        </div> 
     </>  
     
   )
