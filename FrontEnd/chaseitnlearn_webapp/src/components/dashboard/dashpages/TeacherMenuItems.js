@@ -13,13 +13,13 @@ export const TeacherMenuItems = [
     },
     {
         title: "Classes",
-        url: "/courses",
+        url: "/course/add",
         cName: "nav-links",
         icon: "fa-solid fa-book"
     },
     {
-        title: "",
-        url: "/course",
+        title: "Resources",
+        url: "/resources/add",
         cName: "nav-links",
         icon: ""
     },
