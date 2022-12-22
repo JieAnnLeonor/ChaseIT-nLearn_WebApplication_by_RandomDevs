@@ -7,6 +7,8 @@ import Pricing from "./components/frontpage/routes/Pricing";
 import Contact from "./components/frontpage/routes/Contact";
 import SignUp from "./components/frontpage/routes/SignUp";
 import Register from "./components/frontpage/routes/Register"
+import StudentDashboard from "./components/dashboard/dashpages/StudentDashboard";
+import MyCourses from "./pages/MyCourses";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />        
         <Route path="/signup" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/studentdashboard" element={<StudentDashboard/>}/>      
+        <Route path="/readallcourses" element={<MyCourses />} />
       </Routes>
     </div>
   );
