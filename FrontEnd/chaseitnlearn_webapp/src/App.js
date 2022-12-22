@@ -22,6 +22,7 @@ import CreateCourse from "./pages/TeacherPage/CreateCourse";
 import CreateResources from "./pages/TeacherPage/CreateResources";
 import ReadResources from "./pages/TeacherPage/ReadResources";
 import CreateQuiz from "./pages/CreateQuiz";
+import StudentProfile from "./routes/StudentProfile";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path="/resources/add" element={<CreateResources/>}/>
         <Route path="/resources/list" element={<ReadResources/>}/>
         <Route path="/createquiz" element={<CreateQuiz />}/>
+        <Route path="/studentprofile" element={<StudentProfile />}/>
       </Routes>
     </div>
   );

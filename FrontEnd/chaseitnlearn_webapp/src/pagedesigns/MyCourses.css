@@ -71,6 +71,6 @@
 
 .back button{
     border: none;
-    background: #fff;    
+    background: rgb(188, 203, 230) !important;    
     font-size: 20px;
 }
