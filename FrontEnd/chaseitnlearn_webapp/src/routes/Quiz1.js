@@ -7,6 +7,7 @@ import "./Chapter1.css"
 const Quiz1 = () => {
   return (
     <>
+    <div className='body'>
       <StudentNavbar/>   
       <div className = "back">
         <Link to="/takelessons">
@@ -14,6 +15,7 @@ const Quiz1 = () => {
         </Link>  
     </div>     
       <Sidebar/> 
+      
       <div className='intro'>
         <h1>Lesson 1: Quiz </h1>
         <h6>Attepmts allowed: 1</h6>
@@ -21,6 +23,7 @@ const Quiz1 = () => {
         <Link to="/takequiz">
           <button>Start</button>
         </Link> 
+      </div>
       </div>
     </>
   )

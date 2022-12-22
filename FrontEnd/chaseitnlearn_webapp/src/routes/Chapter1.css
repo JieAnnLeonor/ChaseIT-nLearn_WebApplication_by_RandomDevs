@@ -19,6 +19,14 @@
     font-weight: bold;
 }
 
+.body {
+    background-color: rgb(188, 203, 230);
+    height: 100vh;
+}
+
+.body button{
+    background-color: rgb(188, 203, 230);
+}
 .chap1 h5{
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -56,6 +64,16 @@
 }
 
 .intro h6{
+    padding-top: 0.5rem;
     padding-right: 1rem;
 }
+
+.intro button{
+    padding-left: 1rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    color: aliceblue;
+    background: rgb(127, 140, 255);
+}
+
 
