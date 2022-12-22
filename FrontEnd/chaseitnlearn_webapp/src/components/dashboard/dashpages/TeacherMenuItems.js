@@ -18,16 +18,10 @@ export const TeacherMenuItems = [
         icon: "fa-solid fa-book"
     },
     {
-        title: "",
-        url: "/course",
+        title: "Resources",
+        url: "/resource",
         cName: "nav-links",
-        icon: ""
-    },
-    {
-        title: "",
-        url: "/notif",
-        cName: "nav-links",
-        icon: "fa-solid fa-bell"
+        icon: "fa-solid fa-user-gear"
     },
     {
       title: "My Profile",
