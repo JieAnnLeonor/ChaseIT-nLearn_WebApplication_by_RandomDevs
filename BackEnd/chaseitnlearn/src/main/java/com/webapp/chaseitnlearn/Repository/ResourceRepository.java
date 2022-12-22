@@ -4,8 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import com.webapp.chaseitnlearn.Controller.ResourceEntity;
 
-
-
 @Repository
 public interface ResourceRepository extends JpaRepository<ResourceEntity, Integer>{
 

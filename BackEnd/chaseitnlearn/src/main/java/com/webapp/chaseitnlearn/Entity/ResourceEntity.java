@@ -1,4 +1,4 @@
-package com.randomdevs.webapp.Entity;
+package com.webapp.chaseitnlearn.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tbl_resources")
-public class ResourcesEntity {
+public class ResourceEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int r_id;
@@ -27,9 +27,9 @@ public class ResourcesEntity {
 	@JoinColumn(name="teacher_id", referencedColumnName="id")
 	TeacherEntity teacher;
 	
-	public ResourcesEntity() {}
+	public ResourceEntity() {}
 
-	public ResourcesEntity(int r_id, String r_title, String r_name, String r_type, String r_description, byte[] r_data, TeacherEntity teacher) {
+	public ResourceEntity(int r_id, String r_title, String r_name, String r_type, String r_description, byte[] r_data, TeacherEntity teacher) {
 		super();
 		this.r_id = r_id;
 		this.r_title = r_title;
