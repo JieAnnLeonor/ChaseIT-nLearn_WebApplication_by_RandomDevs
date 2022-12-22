@@ -14,7 +14,7 @@ function MyCourses() {
       console.log(search);
     };
 
-  const[noOfElemennt, setnoOfElement] = useState(4);
+  const[noOfElemennt, setnoOfElement] = useState(8);
 
     const loadLess = () =>{
       setnoOfElement(noOfElemennt - 1);
