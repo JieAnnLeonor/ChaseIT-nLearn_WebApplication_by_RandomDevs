@@ -2,14 +2,16 @@ package com.webapp.chaseitnlearn.Entity;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "tbl_teacher")
@@ -24,18 +26,18 @@ public class TeacherEntity {
 	private String middlename;
 	private String contact;
 	
-	@ManyToMany
-	@JoinTable(
-			name="teacher_course", 
-			joinColumns = @JoinColumn(name = "teacher_id"),
-			inverseJoinColumns = @JoinColumn(name = "course_id")
-			)
+	@JsonIgnore
+	@ManyToMany(mappedBy = "tcourse")
 	Set<CourseEntity> courses;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy="teacher", cascade = CascadeType.ALL)
+	Set<ResourceEntity> resources;
 	
 	public TeacherEntity() {}
 
 	public TeacherEntity(int id, String firstname, String lastname, String middlename, String contact,
-			Set<CourseEntity> courses) {
+			Set<CourseEntity> courses, Set<ResourceEntity> resources) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -43,6 +45,7 @@ public class TeacherEntity {
 		this.middlename = middlename;
 		this.contact = contact;
 		this.courses = courses;
+		this.resources = resources;
 	}
 
 	public int getId() {
@@ -91,5 +94,14 @@ public class TeacherEntity {
 
 	public void setCourses(Set<CourseEntity> courses) {
 		this.courses = courses;
+	}
+
+	public Set<ResourceEntity> getResources() {
+		return resources;
+	}
+
+	public void setResources(Set<ResourceEntity> resources) {
+		this.resources = resources;
 	}	
+	
 }
