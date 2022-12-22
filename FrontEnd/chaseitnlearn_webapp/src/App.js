@@ -23,7 +23,7 @@ import CreateResources from "./pages/TeacherPage/CreateResources";
 import ReadResources from "./pages/TeacherPage/ReadResources";
 import CreateQuiz from "./pages/CreateQuiz";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Routes>
@@ -52,3 +52,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
