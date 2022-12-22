@@ -5,8 +5,7 @@ import Navbar from './components/NAVBAR';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App">      
       <Dashboard />
     </div>        
   );
