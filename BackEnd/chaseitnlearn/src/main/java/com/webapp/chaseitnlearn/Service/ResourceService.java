@@ -60,6 +60,7 @@ public class ResourceService {
 		
 		try {
 			res = resrep.findById(r_id).get();
+			
 			//Step 2 - update the record
 			res.setR_description(resource.getR_description());
 			res.setR_title(resource.getR_title());
