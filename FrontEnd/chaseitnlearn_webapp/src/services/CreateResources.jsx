@@ -8,6 +8,7 @@ import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import FooterC from './FooterC';
 import { Box } from '@mui/system';
 
 
@@ -62,6 +63,7 @@ class CreateResources extends Component {
 
     render() {
         return (
+            <>
             <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
                 <Box sx={{padding: 1, fontSize: "3rem", fontFamily: 'Trocchi', fontWeight: "bold"
                     ,letterSpacing: "-1px", lineHeight: "2", textAlign: "center", color: "rgb(130, 170, 227)"}}>
@@ -126,6 +128,7 @@ class CreateResources extends Component {
                                     type='submit' 
                                     variant="contained"
                                     endIcon={<ArrowUpwardIcon />}
+                                    sx={{fontWeight: "700", backgroundColor:"rgba(0, 38, 65, 1)"}}
                                 >
                                     SUBMIT
                                 </Button>
@@ -134,7 +137,8 @@ class CreateResources extends Component {
                     </Box>
                 </Card>
             </Box>
-                
+            <FooterC />
+            </>   
         );
     }
 }

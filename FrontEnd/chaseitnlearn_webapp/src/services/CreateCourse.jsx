@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import FooterC from './FooterC';
 import { Box } from '@mui/system';
 
 
@@ -68,6 +69,7 @@ class CreateCourse extends Component {
 
     render() {
         return (
+            <>
             <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
                 <Box sx={{padding: 1, fontSize: "3rem", fontFamily: 'Trocchi', fontWeight: "bold"
                     ,letterSpacing: "-1px", lineHeight: "2", textAlign: "center", color: "rgb(130, 170, 227)"}}>
@@ -142,6 +144,7 @@ class CreateCourse extends Component {
                                     type='submit' 
                                     variant="contained"
                                     endIcon={<ArrowUpwardIcon />}
+                                    sx={{fontWeight: "700", backgroundColor:"rgba(0, 38, 65, 1)"}}
                                 >
                                     SUBMIT
                                 </Button>
@@ -150,6 +153,8 @@ class CreateCourse extends Component {
                     </Box>
                 </Card>
         </Box>
+        <FooterC />
+        </>
         );
     }
 }
