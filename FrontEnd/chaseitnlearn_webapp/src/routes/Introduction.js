@@ -7,6 +7,7 @@ import "./Chapter1.css"
 const Introduction = () => {
   return (
     <> 
+    <div className='body'>
     <StudentNavbar/>   
       <div className = "back">
         <Link to="/takelessons">
@@ -44,6 +45,7 @@ const Introduction = () => {
         how experienced the development team is, and the deadline for the project.
         Application development is closely linked with the software development life-cycle (SDLC).
         </h6>
+      </div>
       </div>
     </>
   )
