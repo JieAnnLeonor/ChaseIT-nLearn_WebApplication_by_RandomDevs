@@ -16,10 +16,6 @@ function MyCourses() {
 
   const[noOfElemennt, setnoOfElement] = useState(4);
 
-    const loadMore = () =>{
-      setnoOfElement(noOfElemennt + noOfElemennt);
-    }
-
     const loadLess = () =>{
       setnoOfElement(noOfElemennt - 1);
     }
@@ -90,19 +86,9 @@ function MyCourses() {
             )
           })}   
         </div>  
-
-              <button 
-          className="btn1 btn-dark padding-top-20rem d-block w-100"
-          onClick={() => loadMore()}
-        >Load More</button>
-
       </section>     
 
-
-
       <div className="enroll">
-
-
         <Link to="/enrollcourse">
           <button>Enroll</button>
         </Link>
