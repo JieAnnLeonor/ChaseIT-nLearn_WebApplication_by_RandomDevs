@@ -10,10 +10,10 @@ export const StudentMenuItems = [
       title: "My Courses",
       url: "/readallcourses",
       cName: "nav-links",
-      icon: "fa-solid fa-circle-info"
+      icon: "fa-solid fa-book"
     },
     {
-      title: "",
+      title: "My Profile",
       url: "/studentprofile",
       cName: "nav-links-mobile",
       icon: "fa-solid fa-user-circle"
