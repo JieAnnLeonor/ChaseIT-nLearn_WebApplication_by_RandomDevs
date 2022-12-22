@@ -1,7 +1,7 @@
 export const TeacherMenuItems = [
     {
       title: "Dashboard",
-      url: "/studentdashboard",
+      url: "/teacherdashboard",
       cName: "nav-links",
       icon: "fa-solid fa-house-user"
     },
