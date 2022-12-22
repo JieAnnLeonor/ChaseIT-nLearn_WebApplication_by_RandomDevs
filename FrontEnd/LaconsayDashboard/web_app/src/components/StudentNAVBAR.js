@@ -1,7 +1,7 @@
 import { Component } from "react";
 import "./StudentNavbarStyle.css"
-import { MenuItems } from "./StudentMenuItems";
-import { Link } from "react-router-dom";
+import { StudentMenuItems } from "./StudentMenuItems";
+import {Link} from "react-router-dom";
 
 class StudentNavbar extends Component {
   render() {
@@ -15,10 +15,10 @@ class StudentNavbar extends Component {
           {StudentMenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className={item.cName} to={item.url}>
+                { <Link className={item.cName} to={item.url}>
                   <i className={item.icon}></i>
                   {item.title}
-                </Link>
+                </Link> }
               </li>
             );
           })}

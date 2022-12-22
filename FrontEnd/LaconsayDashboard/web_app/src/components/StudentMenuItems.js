@@ -11,7 +11,7 @@ export const StudentMenuItems = [
       url: "/",
       cName: "nav-links",
       icon: "fa-solid fa-circle-info"
-    }
+    },
     
     {
       title: "",

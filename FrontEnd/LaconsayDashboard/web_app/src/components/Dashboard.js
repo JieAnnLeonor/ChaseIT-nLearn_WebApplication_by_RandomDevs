@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DashboardStyle from './DashboardStyle.css'
-import Navbar from './StudentNAVBAR';
+import StudentNavbar from './StudentNAVBAR';
 import RecentActivities from './RecentActivities';
 import RecentClasses from './RecentClasses';
 
