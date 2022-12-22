@@ -5,13 +5,11 @@ import Typography from '@mui/material/Typography';
 const FooterC = () =>
 {
 return (
-    <footer className='footer'>
-                <Box>
-                    <Typography sx={{fontSize: "0.7rem", backgroundColor: "rgba(0, 38, 65, 1)"}}>
-                        ©ChaseIT’nLearn Inc. All Right Reserved
-                    </Typography>
-                </Box>
-    </footer>
+        <Box sx={{position:"fixed", left: 0, bottom: 0, width: "100%", color: "white", textAlign: "center"}}>
+            <Typography sx={{fontSize: "0.7rem", backgroundColor: "rgba(0, 38, 65, 1)"}}>
+                    ©ChaseIT’nLearn Inc. All Right Reserved
+            </Typography>
+        </Box>
 );
 }
  

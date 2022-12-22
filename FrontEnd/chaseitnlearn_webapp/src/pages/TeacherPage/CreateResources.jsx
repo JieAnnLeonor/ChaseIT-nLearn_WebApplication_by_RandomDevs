@@ -4,9 +4,7 @@ import axios from 'axios';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import FooterC from './FooterC';
 import { Box } from '@mui/system';
@@ -81,19 +79,19 @@ class CreateResources extends Component {
                         <form onSubmit={this.handleSubmit}>     
                             <Stack
                                 direction="row"
-                                justifyContent="flex-end"
+                                justifyContent="center"
                                 alignItems="center"
                                 spacing={3}
                             >
                                     <Typography sx={{fontSize: "1.5rem", display: "inline-block", color: "grey", fontWeight: "700"}}>TITLE:</Typography>
                                     <TextField value={this.state.r_title} onChange={this.handleTitleChange} id="r_title" variant="standard" 
-                                            InputProps={{ sx: { width: 320 ,height: 30, fontSize: "1rem", 
+                                            InputProps={{ sx: { width: 300 ,height: 30, fontSize: "1rem", 
                                             backgroundColor: "white", padding: 2, color: 'black'} }}
                                     />   
                             </Stack>
                             <Stack
                                 direction="row"
-                                justifyContent="flex-end"
+                                justifyContent="center"
                                 alignItems="center"
                                 spacing={3}
                                 sx={{padding:1}}
@@ -111,17 +109,13 @@ class CreateResources extends Component {
                             </Stack>
                             <Stack
                                 direction="row"
-                                justifyContent="flex-end"
+                                justifyContent="center"
                                 alignItems="center"
-                                spacing={5}
+                                spacing={3}
                                 sx={{padding:1}}
                             >
                                 <Typography sx={{fontSize: "1.5rem", display: "inline-block", color: "grey", fontWeight: "700"}}>FILE:</Typography>
-                                <IconButton color="primary" aria-label="upload picture" component="label">
-                                    <DriveFolderUploadIcon/>
                                     <input type="file" id='filex' onChange={this.handleFile}/>
-                                </IconButton>
-                                {/*<input type="file" id='filex' onChange={this.handleFile}/>*/}
                             </Stack>
                             <Box>
                                 <Button 
