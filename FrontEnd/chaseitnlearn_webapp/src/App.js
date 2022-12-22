@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import CreateCourse from './services/CreateCourse';
@@ -6,14 +7,11 @@ import FooterC from './services/FooterC';
 function App() {
   return (
     <>
-      <div>
-        <CreateCourse />
-      </div>
-      <div>
-        <FooterC />
-      </div>
+        <Routes>
+          <Route path="/addResources" element={<CreateResources/>} />
+          <Route path="/addCourse" element={<CreateCourse/>} />
+        </Routes>
     </>
-      
   );
 }
 
