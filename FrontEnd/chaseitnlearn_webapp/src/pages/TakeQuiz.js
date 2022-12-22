@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Resources = () => {
+const TakeQuiz = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Resources = () => {
   )
 }
 
-export default Resources
+export default TakeQuiz
