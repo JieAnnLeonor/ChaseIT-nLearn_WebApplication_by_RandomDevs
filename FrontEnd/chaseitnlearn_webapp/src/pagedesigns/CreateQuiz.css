@@ -9,7 +9,6 @@
 }
 
 .title{
-    margin-left: 0rem;
     text-align: left;
     font-size: xx-large;
     font-weight: bold;
@@ -18,15 +17,22 @@
 .quiz-title input{
     width: auto;
     font-size: x-large;
+    margin-bottom: 5%;
+}
+
+.questions{
+    border-top: 5px solid;
 }
 
 .question{
     font-size: x-large;
+    margin-bottom: 5%;
 }
 
 .answer{
     float: left;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-bottom: 5%;
 }
 
 .quiz-container form{
@@ -37,35 +43,17 @@
     margin: auto;
     justify-content: center;
     align-content: center;
-    background-color: lightblue;
-    border: 15px solid lightblue;
+    background-color: rgb(160, 183, 245);
+    border: 10px solid rgb(123, 131, 192);
 }
 
 .quiz-container button{
     margin: auto;
-    background: #65a3cc;
+    background: #65cc7b;
     width: 300px;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 20px;
-}
-
-.Enter{
-    font-size: 15px;
-    padding-top: 1rem;
-}
-
-.Enter input{
-    height: 30px;
-    font-style: italic;
-    width: 300px;
-}
-
-.Enter button{
-    margin-left: 1rem;
-    padding-bottom: 0.1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 5px;
 }
 
 .back{

@@ -36,7 +36,7 @@ function CreateQuiz(){
               <br></br>
             </div>
             
-            <div id="questions">
+            <div className="questions">
               <div className="question">
               <label for="question-1">Question 1:</label><br/>
                   <input type="text" id="question-1" name="question-1"/>
