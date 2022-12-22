@@ -10,14 +10,13 @@ const TeacherDashboard = () => {
     <>
         <TeacherNavbar/>
         <div className="Dashboard-header">
-                Dashboard
-                <Link to = "/createquiz">
-                  <button className="button">Add Quiz</button>
-                </Link>   
+            Dashboard
+            <Link to = "/createquiz">
+              <button className="button">Add Quiz</button>
+            </Link>   
         </div>
-
-            <RecentClasses />
-            <RecentActivities />
+          <RecentClasses />
+          <RecentActivities />
     </>
   )
 }

@@ -8,8 +8,8 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import axios from 'axios';
 import Typography from '@mui/material/Typography';
-import TeacherDashboard from '../../components/dashboard/dashpages/TeacherDashboard';
 import FooterC from '../../components/frontpage/contents/FooterC';
+import TeacherNavbar from '../../components/dashboard/dashpages/TeacherNavbar';
 
 class ReadResources extends Component {
     constructor(props){
@@ -27,7 +27,7 @@ class ReadResources extends Component {
     render() {
         return (
             <>
-               <TeacherDashboard/>
+               <TeacherNavbar/>
                <TableContainer sx={{display: "flex", justifyContent:"center", alignItems: "center", alignContent: "center"}} component={Paper}>
                     <Table sx={{ width: "800px", backgroundColor: "rgb(130, 170, 227)", overflowY: "scroll"}} aria-label="caption table">
                         <TableHead>

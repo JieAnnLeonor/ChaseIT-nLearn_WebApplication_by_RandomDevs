@@ -7,8 +7,8 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import FooterC from '../../components/frontpage/contents/FooterC';
-import TeacherDashboard from '../../components/dashboard/dashpages/TeacherDashboard';
 import { Box } from '@mui/system';
+import TeacherNavbar from '../../components/dashboard/dashpages/TeacherNavbar';
 
 
 class CreateResources extends Component {
@@ -63,7 +63,7 @@ class CreateResources extends Component {
     render() {
         return (
             <>
-            <TeacherDashboard/>
+            <TeacherNavbar/>
             <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
                 <Box sx={{padding: 1, fontSize: "3rem", fontFamily: 'Trocchi', fontWeight: "bold"
                     ,letterSpacing: "-1px", lineHeight: "2", textAlign: "center", color: "rgb(130, 170, 227)"}}>
